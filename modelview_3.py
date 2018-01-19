@@ -11,7 +11,7 @@ from PyQt5.QtCore import Qt as qt
 
 class MyModel(QtCore.QAbstractTableModel):
     #notice that dataChanged is a class attribute from
-    #the parent class ; it's set at creation time
+    #the parent class; it's set at creation time
     #by inheritance
     def __init__(self,parent):
         super(MyModel,self).__init__(parent)
