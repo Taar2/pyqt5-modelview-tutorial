@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Jan 19 01:30:40 2018
-
-@author: LB
+@author: Taar
 """
 
 #conversion of https://github.com/openwebos/qt/tree/master/examples/tutorials/modelview/1_readonly
@@ -25,7 +23,7 @@ class MyModel(QtCore.QAbstractTableModel):
 if __name__ == '__main__':
     app = QtWidgets.QApplication.instance()
     if app is None:
-        app= QtWidgets.QApplications(sys.argv)
+        app= QtWidgets.QApplication(sys.argv)
     tableView = QtWidgets.QTableView()
     myModel = MyModel(None)
     tableView.setModel(myModel)
