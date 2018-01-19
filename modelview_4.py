@@ -31,7 +31,8 @@ if __name__ == '__main__':
     tableView = QtWidgets.QTableView()
     myModel = MyModel(None)
     tableView.setModel(myModel)
-    #one addition to example files
+    #one addition to the file, as shown in the tutorial
+    #hide vertical header
     tableView.verticalHeader().hide()
     tableView.show()
     app.exec_()
